@@ -1,0 +1,82 @@
+.flex-father {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1440px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-father .flex-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 33%;
+  padding: 40px;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.flex-father .flex-child .car-icon {
+  margin-top: 0px;
+}
+
+.flex-father .flex-child .car-icon .car-icon-img {
+  margin-bottom: 20px;
+}
+
+.flex-father .flex-child .car-title {
+  font-family: 'Big Shoulders Display', cursive;
+  color: #FFF;
+  font-size: 40px;
+  padding: 20px 20px 20px 0px;
+}
+
+.flex-father .flex-child .car-text {
+  color: #fff;
+  font-size: 15px;
+  line-height: 25px;
+  padding-bottom: 50px;
+}
+
+.flex-father .flex-child .car-button a {
+  background-color: #fff;
+  display: inline-block;
+  width: 50%;
+  border-radius: 100px;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px;
+}
+
+.flex-father .car-Sedan {
+  background-color: #e38826;
+}
+
+.flex-father .car-Sedan .car-button a {
+  color: #e38826;
+}
+
+.flex-father .car-Suv {
+  background-color: #006970;
+}
+
+.flex-father .car-Suv .car-button a {
+  color: #006970;
+}
+
+.flex-father .car-Luxury {
+  background-color: #004241;
+}
+
+.flex-father .car-Luxury .car-button a {
+  color: #004241;
+}
+/*# sourceMappingURL=styles.css.map */
