@@ -2,6 +2,11 @@ $sedan-color: hsl(31, 77%, 52%)
 $suv-color: hsl(184, 100%, 22%)
 $luxury-color: hsl(179, 100%, 13%)
 
+* 
+    margin: 0
+    padding: 0
+
+
 body
     height: 100vh
     display: flex
@@ -16,7 +21,7 @@ body
         .flex-child
             display: flex
             flex-direction: column
-            width: 33%
+            width: 15%
             padding: 40px
             font-family: 'Lexend Deca', sans-serif
             .car-icon
@@ -49,24 +54,45 @@ body
             .car-button
                 a
                     color: $sedan-color
+                    &:hover
+                        background-color: $sedan-color
+                        text-decoration: underline
+                        color: #FFF
         .car-Suv
             background-color: $suv-color
             .car-button
                 a
                     color: $suv-color
+                    &:hover
+                        background-color: $suv-color
+                        text-decoration: underline
+                        color: #FFF
         .car-Luxury
             background-color: $luxury-color
             .car-button
                 a
                     color: $luxury-color
+                    &:hover
+                        background-color: $luxury-color
+                        text-decoration: underline
+                        color: #FFF
 
 // Media queries
 @media screen and (max-width: 866px)
 
     body
-        height: fit-content
+        height: auto
         .flex-father
             flex-direction: column
-            width: 100%
+            width: 90%
             .flex-child
                 width: 90%
+                height: 450px
+                .car-title
+                    font-size: 50px
+                .car-text
+                    margin-top: 20px
+                    font-size: 20px
+                .car-button
+                    a
+                        margin-top: 20px

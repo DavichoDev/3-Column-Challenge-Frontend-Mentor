@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   height: 100vh;
   display: -webkit-box;
@@ -32,7 +37,7 @@ body .flex-father .flex-child {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 33%;
+  width: 15%;
   padding: 40px;
   font-family: 'Lexend Deca', sans-serif;
 }
@@ -77,12 +82,24 @@ body .flex-father .car-Sedan .car-button a {
   color: #e38826;
 }
 
+body .flex-father .car-Sedan .car-button a:hover {
+  background-color: #e38826;
+  text-decoration: underline;
+  color: #FFF;
+}
+
 body .flex-father .car-Suv {
   background-color: #006970;
 }
 
 body .flex-father .car-Suv .car-button a {
   color: #006970;
+}
+
+body .flex-father .car-Suv .car-button a:hover {
+  background-color: #006970;
+  text-decoration: underline;
+  color: #FFF;
 }
 
 body .flex-father .car-Luxury {
@@ -93,21 +110,36 @@ body .flex-father .car-Luxury .car-button a {
   color: #004241;
 }
 
+body .flex-father .car-Luxury .car-button a:hover {
+  background-color: #004241;
+  text-decoration: underline;
+  color: #FFF;
+}
+
 @media screen and (max-width: 866px) {
   body {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    height: auto;
   }
   body .flex-father {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 100%;
+    width: 90%;
   }
   body .flex-father .flex-child {
     width: 90%;
+    height: 450px;
+  }
+  body .flex-father .flex-child .car-title {
+    font-size: 50px;
+  }
+  body .flex-father .flex-child .car-text {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  body .flex-father .flex-child .car-button a {
+    margin-top: 20px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
