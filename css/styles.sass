@@ -1,56 +1,72 @@
 $sedan-color: hsl(31, 77%, 52%)
 $suv-color: hsl(184, 100%, 22%)
 $luxury-color: hsl(179, 100%, 13%)
-    
-.flex-father
+
+body
+    height: 100vh
     display: flex
-    width: 1440px
-    align-items: center
     justify-content: center
+    align-items: center
 
-    .flex-child
+    .flex-father
         display: flex
-        flex-direction: column
-        width: 33%
-        padding: 40px
-        font-family: 'Lexend Deca', sans-serif
-        .car-icon
-            margin-top: 0px
-            .car-icon-img
-                margin-bottom: 20px
-        .car-title
-            font-family: 'Big Shoulders Display', cursive
-            color: #FFF
-            font-size: 40px
-            padding: 20px 20px 20px 0px
-        .car-text
-            color: #fff
-            font-size: 15px
-            line-height: 25px
-            padding-bottom: 50px
-        .car-button
-            a
-                background-color: #fff
-                display: inline-block
-                width: 50%
-                border-radius: 100px
-                text-align: center
-                text-decoration: none
-                padding: 15px
-            
+        width: 1440px
+        align-items: center
+        justify-content: center
+        .flex-child
+            display: flex
+            flex-direction: column
+            width: 33%
+            padding: 40px
+            font-family: 'Lexend Deca', sans-serif
+            .car-icon
+                margin-top: 0px
+                .car-icon-img
+                    margin-bottom: 20px
+            .car-title
+                font-family: 'Big Shoulders Display', cursive
+                color: #FFF
+                font-size: 40px
+                padding: 20px 20px 20px 0px
+            .car-text
+                color: #fff
+                font-size: 15px
+                line-height: 25px
+                padding-bottom: 50px
+            .car-button
+                a
+                    background-color: #fff
+                    display: inline-block
+                    width: 50%
+                    border-radius: 100px
+                    text-align: center
+                    text-decoration: none
+                    padding: 15px
+                
 
-    .car-Sedan
-        background-color: $sedan-color
-        .car-button
-            a
-                color: $sedan-color
-    .car-Suv
-        background-color: $suv-color
-        .car-button
-            a
-                color: $suv-color
-    .car-Luxury
-        background-color: $luxury-color
-        .car-button
-            a
-                color: $luxury-color
+        .car-Sedan
+            background-color: $sedan-color
+            .car-button
+                a
+                    color: $sedan-color
+        .car-Suv
+            background-color: $suv-color
+            .car-button
+                a
+                    color: $suv-color
+        .car-Luxury
+            background-color: $luxury-color
+            .car-button
+                a
+                    color: $luxury-color
+
+// Media queries
+@media screen and (max-width: 866px)
+
+    body
+        height: fit-content
+        .flex-father
+            flex-direction: column
+            width: 100%
+            .flex-child
+                width: 90%
